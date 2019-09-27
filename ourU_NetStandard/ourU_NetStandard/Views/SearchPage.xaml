@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ourU_NetStandard.Views.SearchPage"
+             NavigationPage.HasBackButton="False">
+    <ContentPage.Content>
+    <StackLayout
+            HorizontalOptions="Fill"
+            VerticalOptions="Fill">
+            <ListView
+                BackgroundColor="Silver">
+                <ListView.Header>
+                    <StackLayout>
+                    <SearchBar
+                        BackgroundColor="Gray"
+                        Placeholder="Search"
+                        FontAttributes="Bold"/>
+                        <ListView x:Name="BookListView" HasUnevenRows="true">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <StackLayout>
+                                            <StackLayout.GestureRecognizers>
+                                                <TapGestureRecognizer
+                                                    Tapped="BookItem_Clicked"
+                                                    NumberOfTapsRequired="1">
+                                                    </TapGestureRecognizer>
+                                                </StackLayout.GestureRecognizers>
+                                            <Label Text="Title: " Font="Bold"/>
+                                            <Label Text="{Binding theTitle}"/>
+                                            <Label Text="Author: " Font="Bold"/>
+                                            <Label Text="{Binding theAuthor}"/>
+                                            <Label Text="ISBN#: " Font="Bold"/>
+                                            <Label Text="{Binding theISBN}"/>
+                                    </StackLayout>
+                                        </ViewCell>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </StackLayout>
+                </ListView.Header>
+                <ListView.Footer>  
+                    <Button
+                        BackgroundColor="Gray"
+                        FontAttributes="Bold"
+                        TextColor="White"
+                        Text="+ New Book"
+                    Clicked="AddBook_Clicked"/>
+                </ListView.Footer>
+                </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

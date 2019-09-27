@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ourU_NetStandard.Views.SellPage"
+             NavigationPage.HasBackButton="False"
+    Title="My Listings">
+    <ContentPage.Content>
+               <StackLayout
+            HorizontalOptions="Fill"
+            VerticalOptions="Fill">
+            <ListView>
+                <ListView.Header>
+                    <StackLayout>
+                        <Button  BackgroundColor="#F5F5F5" Text="Listing Item 1" TextColor="Black" BorderRadius="1" Clicked="Listing_Clicked"/>
+                        <Button  BackgroundColor="#F5F5F5" Text="Listing Item 2" TextColor="Black" BorderRadius="1"/>
+                        <Button  BackgroundColor="#F5F5F5" Text="Listing Item 3" TextColor="Black" BorderRadius="1"/>
+                        <Button  BackgroundColor="#F5F5F5" Text="..." TextColor="Black" BorderRadius="1"/>
+                        <Button  BackgroundColor="#F5F5F5" Text="..." TextColor="Black" BorderRadius="1"/>
+                    </StackLayout>
+                </ListView.Header>
+                </ListView>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

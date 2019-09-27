@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="ourU_NetStandard.Views.AddListing">
+	<ContentPage.Content>
+          <Frame  
+            OutlineColor="Accent" 
+                   WidthRequest="400"
+                   HorizontalOptions="CenterAndExpand"
+            VerticalOptions="FillAndExpand"
+                BackgroundColor="#f3f1f0"
+                     >
+        <ScrollView>
+            <StackLayout>
+                    <Entry x:Name="bookIsbnEntry" Placeholder="ISBN"/>
+                    <Entry x:Name="bookPriceEntry" Placeholder="Price"/>
+                    <Entry x:Name="bookStatusEntry" Placeholder="Status" Margin="0,10,0,40"/>
+                    <Entry x:Name="bookCommentEntry" Placeholder="Comments"/>
+                    <Entry x:Name="userNameEntry" Placeholder="Your Name"/>
+                    <Entry x:Name="userPhone" Placeholder="Your Phone Number"/>
+                    <Entry x:Name="userEmail" Placeholder="Your Email"/>
+            
+            <Button Text="List it!" Clicked="ListIt_Clicked"/>
+          </StackLayout>
+        </ScrollView>
+            </Frame>
+	</ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ourU_NetStandard.Views.AboutPage"
+             NavigationPage.HasBackButton="False"
+             BackgroundImage="wood">
+
+    <StackLayout Margin="15, 15"  BackgroundColor="Linen">
+        <ScrollView>
+            <StackLayout>
+                <Label Text="How To Use" HorizontalOptions="Center"
+                       Font="Bold,35" TextColor="Black"/>
+                    <Image Source="ourU_word2" HorizontalOptions="Center"/>
+                        
+          
+                    <Label Text="How to find a book:"
+                           FontSize="20"
+                           TextColor="Brown"
+                           VerticalOptions="StartAndExpand"
+                           HorizontalOptions="CenterAndExpand"/>
+                    <Label Text="   1. Open Search Page"
+                           FontSize="16"
+                           TextColor="SandyBrown"
+                           VerticalOptions="StartAndExpand"
+                           HorizontalOptions="StartAndExpand"/>
+                    <Label Text="   2. Enter title of book"
+                           FontSize="16"
+                           TextColor="SandyBrown"
+                           VerticalOptions="StartAndExpand"
+                           HorizontalOptions="StartAndExpand"/>
+                    <Label Text="   3. Push Search button"
+                           FontSize="16"
+                           TextColor="SandyBrown"
+                           VerticalOptions="StartAndExpand"
+                           HorizontalOptions="StartAndExpand"/>
+                    <Label Text="   4. Scroll the list to find"
+                           FontSize="16"
+                           TextColor="SandyBrown"
+                           VerticalOptions="StartAndExpand"
+                           HorizontalOptions="StartAndExpand"/>
+                    <Label Text="the best option for you"
+                           FontSize="16"
+                           TextColor="SandyBrown"
+                           VerticalOptions="StartAndExpand"
+                           HorizontalOptions="Center"/>
+               
+               
+                    <Label Text="How to sell a book:"
+                           FontSize="20"
+                           TextColor="Brown"
+                           VerticalOptions="StartAndExpand"
+                           HorizontalOptions="CenterAndExpand"/>
+                    <Label Text="   1. Open Sell a Book Page"
+                           FontSize="16"
+                           TextColor="SandyBrown"
+                           VerticalOptions="StartAndExpand"
+                           HorizontalOptions="StartAndExpand"/>
+                    <Label Text="   2. Push Sell Book Button"
+                           FontSize="16"
+                           TextColor="SandyBrown"
+                           VerticalOptions="StartAndExpand"
+                           HorizontalOptions="StartAndExpand"/>
+                    <Label Text="   3. Enter Book Info."
+                           FontSize="16"
+                           TextColor="SandyBrown"
+                           VerticalOptions="StartAndExpand"
+                           HorizontalOptions="StartAndExpand"/>
+                    <Label Text="(Title, Condition, Price)"
+                           FontSize="16"
+                           TextColor="SandyBrown"
+                           VerticalOptions="StartAndExpand"
+                           HorizontalOptions="Center"/>
+                    <Label Text="   4. Push Add Button"
+                           FontSize="16"
+                           TextColor="SandyBrown"
+                           VerticalOptions="StartAndExpand"
+                           HorizontalOptions="StartAndExpand"/>
+                
+                <Label Text="Our Mission"
+                    FontSize="20"
+                    TextColor="Brown"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="CenterAndExpand" />
+                <Label Text="To help students with the burden" 
+                    FontSize="16"
+                    TextColor="SandyBrown"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="Center"/>
+                <Label Text="of textbook costs&#10;&#10;"
+                    FontSize="16"
+                    TextColor="SandyBrown"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="Center"/>
+                <Label Text="Our Objective"
+                    FontSize="20"
+                    TextColor="Brown"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="CenterAndExpand" />
+                <Label Text="OurU is an app to bring financial"
+                    FontSize="16"
+                    TextColor="SandyBrown"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="Center"/>
+                <Label Text="gains to students through the"
+                    FontSize="16"
+                    TextColor="SandyBrown"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="Center"/>
+                <Label Text="buying and selling of textbooks"
+                    FontSize="16"
+                    TextColor="SandyBrown"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="Center"/>
+                <Label Text="to one another&#10;&#10;"
+                    FontSize="16"
+                    TextColor="SandyBrown"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="Center"/>
+                <Label Text="Our Philosophy"
+                    FontSize="20"
+                    TextColor="Brown"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="CenterAndExpand" />
+                <Label Text="Textbook costs should not add"
+                    FontSize="16"
+                    TextColor="SandyBrown"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="Center"/>
+                <Label Text="more stress to the already"
+                    FontSize="16"
+                    TextColor="SandyBrown"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="Center"/>
+                <Label Text="stressful lives of college"
+                    FontSize="16"
+                    TextColor="SandyBrown"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="Center"/>
+                <Label Text="students&#10;&#10;"
+                    FontSize="16"
+                    TextColor="SandyBrown"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="Center"/>
+                <Label Text="Our Promise"
+                    FontSize="20"
+                    TextColor="Brown"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="CenterAndExpand" />
+                <Label Text="To deliver a means to allow"
+                    FontSize="16"
+                    TextColor="SandyBrown"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="Center"/>
+                <Label Text="students to take control of"
+                    FontSize="16"
+                    TextColor="SandyBrown"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="Center"/>
+                <Label Text="textbook costs"
+                    FontSize="16"
+                    TextColor="SandyBrown"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="Center"/>
+                
+                <Button BackgroundColor="Red" Text="Logout" Font="20" TextColor="White" Clicked="LogIn_Clicked"
+                CornerRadius="20" Margin="30,0" HorizontalOptions=" Center"  WidthRequest="300" HeightRequest="50"/>
+                <Label Text=" " />
+                
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

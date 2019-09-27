@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ourU_NetStandard</id>
+    <version>1.0.0</version>
+    <authors>ourU_NetStandard</authors>
+    <owners>ourU_NetStandard</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Microsoft.Azure.Mobile.Client" version="4.0.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Azure.Mobile.Client.SQLiteStore" version="4.0.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Identity.Client" version="2.3.1-preview" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="11.0.2" exclude="Build,Analyzers" />
+        <dependency id="SQLitePCL" version="3.8.7.2" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Forms" version="3.3.0.967583" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/netstandard2.0/SQLitePCL.Ext.dll" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\Gabriel\Documents\GitHub\ourU_NetStandard\ourU_NetStandard\ourU_NetStandard\bin\Release\netstandard2.0\ourU_NetStandard.dll" target="lib\netstandard2.0\ourU_NetStandard.dll" />
+    <file src="C:\Users\Gabriel\.nuget\packages\sqlitepcl\3.8.7.2\build\net45\SQLitePCL.Ext.dll" target="content\SQLitePCL.Ext.dll" />
+    <file src="C:\Users\Gabriel\.nuget\packages\sqlitepcl\3.8.7.2\build\net45\SQLitePCL.Ext.dll" target="contentFiles\any\netstandard2.0\SQLitePCL.Ext.dll" />
+  </files>
+</package>

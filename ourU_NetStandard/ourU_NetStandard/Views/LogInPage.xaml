@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+               xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasBackButton="False"
+             x:Class="ourU_NetStandard.Views.LogInPage"
+             BackgroundImage = "Background4.png">
+    
+          
+        <StackLayout>
+        <Image Source="Small_Box_OWL60.png"/>
+        <Label Text="Textbook selling made Easier" Font="25" HorizontalTextAlignment=" Center" TextColor="Black"/>
+        <Label Text=" " HeightRequest="10"/>
+        <Button BackgroundColor="Maroon" Text="Admin Only" Font="20" TextColor="White" Clicked="TabbedPage"
+                CornerRadius="20" Margin="30,0" HorizontalOptions=" Center"  WidthRequest="300" HeightRequest="50"/>
+        <Button BackgroundColor="Red" Text="Log In" Font="20" TextColor="White" Clicked="OnLoginButtonClicked"
+                CornerRadius="20" Margin="30,0" HorizontalOptions=" Center"  WidthRequest="300" HeightRequest="50"/>
+    </StackLayout>
+</ContentPage>

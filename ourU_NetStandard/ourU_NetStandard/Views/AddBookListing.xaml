@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="ourU_NetStandard.Views.AddBookListing">
+	<ContentPage.Content>
+          <Frame  
+            OutlineColor="Accent" 
+                   WidthRequest="400"
+                   HorizontalOptions="CenterAndExpand"
+            VerticalOptions="FillAndExpand"
+                BackgroundColor="#f3f1f0"
+                     >
+        <ScrollView>
+            <StackLayout>
+            <Entry x:Name="bookPriveEntry" Placeholder="Price"/>
+            <Entry x:Name="bookStatusEntry" Placeholder="Status" Margin="0,10,0,40"/>
+
+            <Label Text="Class:"/>       
+            <Entry x:Name="bookDepartmentrEntry" Placeholder="Department" />
+            <Entry x:Name="bookCourseEntry" Placeholder="Course" />
+            <Entry x:Name="bookSectionEntry" Placeholder="Section" Margin="0,0,0,30"/>
+
+             <Label Text="Comments:"/>      
+                    <Entry
+                        InputTransparent="{Binding EditOption}"/>
+
+             <Label Text="Contact"  HorizontalOptions="Center"/>
+              <Grid>    
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                 </Grid.RowDefinitions>
+                 <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="3*" />
+                 </Grid.ColumnDefinitions>
+                        
+             <Label Text="Phone #:  " Grid.Row="0" Grid.Column="0"/>
+             <Entry Grid.Row="0" Grid.Column="1"/>
+             <Label Text="Email:" Grid.Row="1" Grid.Column="0"/>
+             <Entry Grid.Row="1" Grid.Column="1"/>        
+              </Grid>     
+            <Button Text="List it!"/>
+          </StackLayout>
+        </ScrollView>
+            </Frame>
+	</ContentPage.Content>
+</ContentPage>
